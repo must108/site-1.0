@@ -11,7 +11,7 @@ const colorConfig = {
   colorSaturation: 85 };
 
 if (window.innerWidth < 600) {
-    config.widthToSpikeLengthRatio = 0.05; 
+    config.widthToSpikeLengthRatio = 0.04; 
     colorConfig.particleOpacity = 0.4; 
     colorConfig.hueSpeed = 0.05;
 }
