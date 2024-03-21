@@ -85,7 +85,7 @@ function setup() {
 function reset() {
   hue = colorConfig.baseHue;
   w = canvas.width = window.innerWidth;
-  if(window.innerWidth < 600) {
+  if(window.innerWidth < 800) {
     h = canvas.height = window.innerHeight / 1.15;
   } else {
     h = canvas.height = window.innerHeight / 1.1;
@@ -121,7 +121,7 @@ function drawText() {
   ctx.save();
   let fontSize;
 
-  if(window.innerWidth < 600) {
+  if(window.innerWidth < 800) {
     fontSize = w * 0.2;
   } else {
     fontSize = w * 0.1;
@@ -132,7 +132,7 @@ function drawText() {
   ctx.textBaseline = "middle";
   ctx.lineWidth = 1;
   ctx.strokeStyle = "white";
-  if (window.innerWidth < 600) {
+  if (window.innerWidth < 800) {
     let lines = config.text.split(' ');
     let firstLine = lines.slice(0, Math.ceil(lines.length / 2)).join(' ');
     let secondLine = lines.slice(Math.ceil(lines.length / 2)).join(' ');
